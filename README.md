@@ -1,7 +1,7 @@
 # Unique CSV Data Set Config
 ## Introduction
-*Unique CSV DataSet Config for Jmeter
-*This plugin is an extension of JMeter’s CSV Data Set Config component.
+Unique CSV DataSet Config for Jmeter<br>
+This plugin is an extension of JMeter’s CSV Data Set Config component.
 
 ## Key Features
 1. Ability to provide CSV data only to specified Thread Groups
