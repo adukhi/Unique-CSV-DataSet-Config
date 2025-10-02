@@ -18,7 +18,7 @@
 ### 1. The CSV Data is consumed by a Thread Group that does not utilize the CSV Data
 * CSV Data Set Config
 	* Thread Group B does not use USERID, but it consumes CSV Data, resulting in Thread Group C receiving 3 instead of 2  
-    * When the total number of Threads in Thread A and B is 100, and 100 entries of CSV Data have been prepared, Thread Group B also consumes a portion of the CSV Data, leading to insufficient CSV Data  
+    * When the total number of Threads in Thread A and C is 100, and 100 entries of CSV Data have been prepared, Thread Group B also consumes a portion of the CSV Data, leading to insufficient CSV Data  
 ![](sample/CSVDataSet_NeedToExclusiveAllocation.jpg)
 
 * Unique CSV Data Set Config
