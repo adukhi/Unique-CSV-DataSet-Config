@@ -28,7 +28,7 @@
 ### 2. A user cannot use the same data in each iteration
 * CSV Data Set Config
 	* Users in "Thread Group A 1-1" are assigned different USERIDs in each iteration
-	* Requests with the same data cannot be called multiple times
+	* Requests with the same USERID cannot be called in each iteration
 ![](sample/CSVDataSet_NeedToUniqueAllocation.jpg)
 
 * Unique CSV Data Set Config
