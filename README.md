@@ -6,17 +6,15 @@
 
 ## Key Features
 ### 1. Ability to provide CSV data only to specified Thread Groups
-* When running tests with multiple Thread Groups, you can configure this plugin to ensure that CSV data is supplied only to certain Thread Groups
-* This allows you to use separate CSV data files for each Thread Group as needed
+* When a Test Plan contains multiple Thread Groups, you can specify which Thread Group will consume the CSV data
 	
 ### 2. Ability to specify the number of data records each Thread can use (unique data allocation)
 * You can predefine the number of data records that each Thread will use, and the plugin assigns unique data to each Thread with no duplication
 * For example, if you have 10 Threads and 100 CSV records, the plugin can distribute 10 unique records to each Thread
-* With this plugin, you can more precisely control data distribution and manage data usage for each Thread in your JMeter tests
 
 
 
-## Issues and Solutions of CSV Data Set Config  
+## Problems and Solutions of CSV Data Set Config  
 ### 1. The CSV Data is consumed by a Thread Group that does not utilize the CSV Data
 * CSV Data Set Config
 	* Thread Group B does not use USERID, but it consumes CSV Data, resulting in Thread Group C receiving 3 instead of 2  
@@ -59,9 +57,10 @@
 * Block size for each thread: Enter the number of data entries each user will use
 	* If a value greater than 1 is entered, data will be assigned as follows
 	* Example) When set to 3
-| Iteration | 1 | 2 | 3 | 4 | 5 | 6 |
-|-----------|---|---|---|---|---|---|
-| CSV Data  | 1 | 2 | 3 | 1 | 2 | 3 |
+   
+      | Iteration | 1 | 2 | 3 | 4 | 5 | 6 |
+	  |-----------|---|---|---|---|---|---|
+	  | CSV Data  | 1 | 2 | 3 | 1 | 2 | 3 |
 
 
 
