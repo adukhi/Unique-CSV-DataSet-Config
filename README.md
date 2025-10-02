@@ -38,16 +38,6 @@
 		* There is no function to pre-check the number of CSV data entries against the number of users
 		* Prepare the data with consideration of the number of users
 		
-		
-		
-## Build and Install
-* Download the source code from GitHub
-* Run mvn clean package
-* Check if the file unique-csv-data-set-config-x.x.x.jar is generated in the target directory
-* Copy the unique-csv-data-set-config-x.x.x.jar file to "Jmeter Directory/lib/ext/"
-* After launching JMeter, verify that it has been added to the menu
-![](image/Menu.png)
-
 
 
 ## Screen Description
@@ -61,6 +51,16 @@
       | Iteration | 1 | 2 | 3 | 4 | 5 | 6 |
 	  |-----------|---|---|---|---|---|---|
 	  | CSV Data  | 1 | 2 | 3 | 1 | 2 | 3 |
+
+
+
+## Build and Install
+* Download the source code from GitHub
+* Run "mvn clean package"
+* Check if the file unique-csv-data-set-config-x.x.x.jar is generated in the target directory
+* Copy the unique-csv-data-set-config-x.x.x.jar file to "Jmeter Directory/lib/ext/"
+* After launching JMeter, verify that it has been added to the menu
+![](image/Menu.png)
 
 
 
