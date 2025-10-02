@@ -44,17 +44,17 @@
 * Download the source code from GitHub
 * Run mvn clean package
 * Check if the file unique-csv-data-set-config-x.x.x.jar is generated in the target directory
-* Copy the unique-csv-data-set-config-x.x.x.jar file to <Jmeter Directory>/lib/ext/
+* Copy the unique-csv-data-set-config-x.x.x.jar file to "Jmeter Directory/lib/ext/"
 * After launching JMeter, verify that it has been added to the menu
-![](image/menu.png)
+![](image/Menu.png)
 
 
 
 ## Screen Description
 ![](image/screen.png)
-* Sharing mode: If "Target thread" is selected, only the target thread groups specified will be assigned data from this CSV
-* Target thread group: Enter the names of the thread groups as text, separated by commas (,)
-* Block size for each thread: Enter the number of data entries each user will use
+* Sharing mode: If "Target thread" is selected, Only the Thread Group specified in the 'Target thread group' will use this CSV
+* Target thread group: Enter the names of the Thread Group as text, separated by commas (,)
+* Block size for each thread: Enter the number of data entries each thread will use
 	* If a value greater than 1 is entered, data will be assigned as follows
 	* Example) When set to 3
    
